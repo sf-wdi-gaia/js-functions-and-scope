@@ -1,7 +1,21 @@
+<!--
+Creator: Ilias Tsangaris
+Market: SF
+-->
+
+![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
+
 # Functions and Scope
 
-### Objectives
-*After this lesson, students will be able to:*
+## Why is this important?
+<!-- framing the "why" in big-picture/real world examples -->
+*This workshop is important because:*
+
+**Functions** endow JavaScript with behavior. This aspect of JavaScript is what allows us to **encapsulate** behavior and **abstract** away it's logic. **Scope** is a key concept to understanding how functions work.
+
+## What are the objectives?
+<!-- specific/measurable goal for students to achieve -->
+*After this workshop, developers will be able to:*
 
 - Describe why functions are created
 - Use functions to break programs into smaller sub-programs
@@ -11,14 +25,15 @@
 - Describe the `this` keyword and how it is affected by scope
 - Discuss the difference between public and private scope
 
-### Preparation
-*Before this lesson, students should already be able to:*
+## Where should we be now?
+<!-- call out the skills that are prerequisites -->
+*Before this workshop, developers should already be able to:*
 
 - Write basic JavaScript
 - Use a text editor
 - Use basic JavaScript types and declare variables
 
-## Keep your code DRY using Functions - Intro (5 mins)
+## Keep your code DRY using Functions
 
 A function is a statement or a group of statements that can be called anywhere in the program so that the statements inside the function do not need to be written over and over again.
 
@@ -27,7 +42,7 @@ When writing functions in JavaScript, think of functions as an object, like a st
 Functions are essential to write JavaScript and keep the code [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), semantic, and modular.
 
 
-## Defining Functions and Calling Functions - Codealong (15 mins)
+## Defining Functions and Calling Functions
 
 
 A function can be defined using two different syntaxes. For example, we can define a function `speak` that receives one argument in either of the following ways:
@@ -61,7 +76,7 @@ You call a function by using parenthesis after the function's name `()`:
 
 
 ```javascript
-var hello = function() {
+function hello() {
   return "hello there";
 }
 
@@ -89,7 +104,7 @@ shout('world!', sayHello);
 // alert box that says "hello world!"
 ```
 
-## Compilation - Intro (15 mins)
+## Compilation
 
 Before we talk about scope, there's a few things to understand before thinking about what scope actually means.
 
@@ -154,7 +169,7 @@ Here's a quick summary of what your computer does when you're looking to run you
 		c. Turn source code into bytecode
 	3. Execute bytecode
 
-## Building Scope - Demo (10 mins)
+## Building Scope
 
 Scope is built during the Lexical Analysis part of the Compilation phase. When scope is built during this phase it's called **Lexical Scope**. This is very common in many programming languages.
 
@@ -226,7 +241,7 @@ Declare these in the function's scope.
 
 
 
-## The Terminology of Scope - Codealong (10 mins)
+## The Terminology of Scope
 
 
 There are different terminologies to talk about scope in Javascript. If you read about `(function|global|lexical|public/private)scope` or **closure** or **namespace**, all these keywords are referring to the **scope**, one way or another.
@@ -303,7 +318,7 @@ getScore();
 => 6
 ```
 
-## `this` - Codealong (5 mins)
+## `this`
 
 
 
@@ -342,7 +357,7 @@ wdi.whatsTheName();
 => "WDI"
 ```
 
-## Independent Practice - Write some functions (15 mins)
+## Independent Practice
 
 Work through as many as these exercises as you can within the next 15 mins - use the [starter-code](starter-code) provided!
 
@@ -377,7 +392,7 @@ wordReverse("Put Hans back on the line")
 # => "line the on back Hans Put"
 ```
 
-## Conclusion (5 mins)
+## Conclusion
 
 The only way to master JavaScript scope is to practice. You'll have a lot of confusing errors with the JavaScript you write at the beginning of your journey into programming! This will force you to name variables and functions the right way to make sure there is no conflict.
 
