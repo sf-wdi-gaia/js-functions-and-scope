@@ -210,11 +210,11 @@ Declare lastName in Global Scope.
 3. Found `var age` variable declaration.  
 Declare age in Global Scope.  
 4. Found `var displayPerson` declaration.  
-Declare age in `displayPerson` in Global Scope.
+Declare `displayPerson` in Global Scope.
 
   - Notice that `displayPerson`'s value is a function, which creates an inner scope.
 
-5. Found the `firstName` and `lastName` declarations.
+5. Found the `fname` and `lname` declarations.
 
   > Note: Functions arguments behave just like local variables and are declared.
   - Declare arguments in the `displayPerson` function scope.  
