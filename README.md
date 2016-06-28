@@ -72,6 +72,19 @@ No matter what syntax you use, we can identify the following components of funct
 - A `return` statement.
 
 
+####A Note on Naming
+When naming Javascript functions, it is best practice to use "camelCase" for multi-word function names. This helps improve readability.
+
+**Bad Naming Convention:**
+* `Squarethesenumbers()`
+* `CONVERTTOBINARY()`
+* `pythagoreantheorem()`
+ 
+**Good Naming Convention:**
+* `hexToBinary()`
+* `determineRootVariant()`
+* `deployPhaserTorpedos()`
+
 #### Calling Functions
 
 Calling a function will execute the code defined inside this function.
