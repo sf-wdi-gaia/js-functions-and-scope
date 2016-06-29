@@ -104,24 +104,7 @@ hello();
 => "hello there"
 ```
 
-#### First-order Functions
-
-Because we *name* our functions, we can pass functions around our programs just like we would any other variable. We can even pass a function *into a function* as an argument.
-
-```javascript
-function shout(text) {
-  return text.toUpperCase();
-}
-
-function perform(lyric, style) {
-  return style(lyric);
-}
-
-perform("In the jungle, the mighty jungle", shout);
-//=> "IN THE JUNGLE, THE MIGHTY JUNGLE"
-```
-
-In future lessons we will see how this trick helps make our programs extremely flexible.
+**Code Demo**: [What Do I Return?](/examples/what-do-i-return.js)
 
 ## Arguments and Parameters
 You can think of a function as having an "interface" or "contract" with the outside world. A function expects its inputs to be of a certain form (data type) and in a specific order. Our funcrtions can be thought of as having "placeholders" or "slots" that can dynamically hold values.
@@ -131,9 +114,11 @@ There is a subtle but important difference between an "argument" and "parameter"
 * Arguments -- the actual values passed into a function.
 
 #### What happens when we break contract?
-* No inputs
-* Too few inputs
-* Too many inputs
+* No inputs?
+* Too few inputs?
+* Too many inputs?
+
+**Code Demo**: [Playing with Arguments](/examples/playing-with-arguments.js)
 
 ## The Terminology of Scope
 
@@ -192,6 +177,7 @@ function sayHello(name) {
 sayHello("WDI"); //=> "Hello WDI";
 ```
 
+**Code Demo**: [Playing with Scope](/examples/playing-with-scope.js)
 
 #### `this`
 
@@ -231,6 +217,25 @@ wdi.whatsTheName();
 ```
 
 > Note: When a function is attached to an object we called that function a "method". In the above case, `whatsTheName` is a `wdi` object method.
+
+## Callback Functions
+
+Because we *name* our functions, we can pass functions around our programs just like we would any other variable. We can even pass a function *into a function* as an argument.
+
+```javascript
+function shout(text) {
+  return text.toUpperCase();
+}
+
+function perform(lyric, style) {
+  return style(lyric);
+}
+
+perform("In the jungle, the mighty jungle", shout);
+//=> "IN THE JUNGLE, THE MIGHTY JUNGLE"
+```
+
+In future lessons we will see how this trick (known as the "callback pattern") helps make our programs extremely flexible.
 
 ## Conclusion
 

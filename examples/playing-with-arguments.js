@@ -6,14 +6,28 @@ function greetPerson(name){
 
 
 // Given the following inputs, what will the output be (and why)?
-
-// greetPerson("Aardvark");
-// greetPerson("Llama");
-// greetPerson(undefined);
-// greetPerson();
-// greetPerson(1000, 900);
+//
+// greetPerson("Aardvark");     //=> ?
+// greetPerson("Llama");        //=> ?
+// greetPerson(undefined);      //=> ?
+// greetPerson();               //=> ?
+// greetPerson(1000, 900);      //=> ?
+// greetPerson(greetPerson(greetPerson("World!"))); //=> ?
 
 //--------------------//
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -38,5 +52,5 @@ function greetPerson(name){
     greetPerson(undefined)      //=> "Hello undefined"
     greetPerson();              //=> "Hello undefined"
     greetPerson(1000, 900)      //=> "Hello 1000"
-
+    greetPerson(greetPerson(greetPerson("World!"))); //=> "Hello Hello Hello World!"
 */
